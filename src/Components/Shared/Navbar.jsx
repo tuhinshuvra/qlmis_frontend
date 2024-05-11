@@ -37,8 +37,8 @@ const Navbar = () => {
                                 Publication
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/allBooks">All Publications</Link></li>
-                                <li><Link className="dropdown-item" to="/entryNewBook">New Publication Entry</Link></li>
+                                <li><Link className="dropdown-item" to="/allPublishers">All Publications</Link></li>
+                                <li><Link className="dropdown-item" to="/entryNewPublisher">New Publication Entry</Link></li>
                             </ul>
                         </li>
 

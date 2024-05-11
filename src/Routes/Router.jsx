@@ -11,6 +11,10 @@ import AllAuthor from "../Pages/Authors/AllAuthor";
 import EntryNewAuthor from "../Pages/Authors/EntryNewAuthor";
 import UpdateAuthor from "../Pages/Authors/UpdateAuthor";
 import AuthorDetails from "../Pages/Authors/AuthorDetails";
+import AllPublisher from "../Pages/Publishers/AllPublisher";
+import EntryNewPublisher from "../Pages/Publishers/EntryNewPublisher";
+import UpdatePublisher from "../Pages/Publishers/UpdatePublisher";
+import PublisherDetails from "../Pages/Publishers/PublisherDetails";
 
 const Router = createBrowserRouter([
     {
@@ -54,6 +58,24 @@ const Router = createBrowserRouter([
             {
                 path: "/author/:id",
                 element: <AuthorDetails></AuthorDetails>
+            },
+
+
+            {
+                path: "/allPublishers",
+                element: <AllPublisher></AllPublisher>
+            },
+            {
+                path: "/entryNewPublisher",
+                element: <EntryNewPublisher></EntryNewPublisher>
+            },
+            {
+                path: "/updatePublisher/:id",
+                element: <UpdatePublisher></UpdatePublisher>
+            },
+            {
+                path: "/publisher/:id",
+                element: <PublisherDetails></PublisherDetails>
             },
 
 
