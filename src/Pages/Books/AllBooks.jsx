@@ -82,15 +82,12 @@ const AllBooks = () => {
                                     <td>{book.publisher.name}</td>
                                     <td>{book.price}<b>৳</b> </td>
                                     <td className="">
-                                        <Link to="/updateBook" className=" text-decoration-none fw-bold">Update</Link>
+                                        <Link to={`/updateBook/${book?.id}`} className=" text-decoration-none fw-bold">Update</Link>
                                     </td>
 
                                     <td className="" onClick={() => handleDelete(book.id)}>
                                         <button className=" btn btn-danger btn-sm fw-bolder"> X</button>
                                     </td>
-                                    {/* <td>
-                                        <Link className='btn btn-outline-secondary   btn-sm w-full' to={`/book/${book?.id}`}>Show Details</Link>
-                                    </td> */}
                                 </tr>
                             ))
 

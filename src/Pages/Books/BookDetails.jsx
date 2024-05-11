@@ -8,7 +8,7 @@ const BookDetails = () => {
     const [book, setBook] = useState(null);
 
     // console.log("Book Details", id);
-    console.log("Book Details", book);
+    // console.log("Book Details", book);
     // const { name, details, author, publisher, page, price } = book;
 
     useEffect(() => {
