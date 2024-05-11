@@ -115,7 +115,7 @@ const UpdatePublisher = () => {
 
 
                 <div className=" text-center">
-                    <button onClick={handleUpdateSubmit} type="submit" className="btn btn-secondary w-25 fw-bold">Update</button>
+                    <button onClick={handleUpdateSubmit} type="submit" className="btn btn-secondary w-25 fw-bold">Submit</button>
                 </div>
             </form>
 

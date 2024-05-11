@@ -57,7 +57,12 @@ const AllPublisher = () => {
 
     return (
         <div className="container my-2">
-            <h2>All Publisher </h2>
+            <div className=" d-flex justify-content-between my-3">
+                <h1>All Publisher </h1>
+                <button className="btn">
+                    <Link className=" text-decoration-none text-white fw-bolder btn btn-secondary" to="/entryNewPublisher">Add New Publication</Link>
+                </button>
+            </div>
             {allPublication.length > 0 ?
                 <>
                     <table className="table table-striped table-hover table-secondary">

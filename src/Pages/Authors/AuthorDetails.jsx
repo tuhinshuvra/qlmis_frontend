@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Loader from "../../Loader/Loader";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const AuthorDetails = () => {
     const [loading, setLoading] = useState(false);
@@ -39,6 +39,13 @@ const AuthorDetails = () => {
 
             <div className="mb-3">
                 <p> <b> Address : </b>{author?.address}</p>
+            </div>
+
+
+            <div className=" text-center">
+                <button className=" btn btn-secondary" >
+                    <Link to={`/updateAuthor/${author?.id}`} className=" text-decoration-none fw-bold text-white">Go to Update</Link>
+                </button>
             </div>
 
 

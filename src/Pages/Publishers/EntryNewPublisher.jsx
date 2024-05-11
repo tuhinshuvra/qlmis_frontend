@@ -80,7 +80,7 @@ const EntryNewPublisher = () => {
                         type="test"
                         name="address"
                         id="address"
-                        placeholder="Enter pbulication's address"
+                        placeholder="Enter publication's address"
                         required
                     ></input>
                 </div>

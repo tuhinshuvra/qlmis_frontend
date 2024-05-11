@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Loader from "../../Loader/Loader";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const BookDetails = () => {
     const [loading, setLoading] = useState(false);
@@ -37,10 +37,6 @@ const BookDetails = () => {
         <div className=" col-lg-6 col-10 container my-5">
             <h2 className=" text-center fw-bold text-secondary mb-4">{book?.name} Book's Details</h2>
 
-            {/* <div className="mb-3">
-                <p> <b> Book's Name : </b>{book?.name}</p>
-            </div> */}
-
             <div className="mb-3">
                 <p> <b> Author : </b>{book?.author?.name}</p>
             </div>
@@ -49,16 +45,25 @@ const BookDetails = () => {
                 <p> <b> Publisher : </b>{book?.publisher?.name}</p>
             </div>
 
-            <div className="mb-3">
-                <p> <b> About's the book : </b>{book?.details}</p>
-            </div>
+            {
+                book?.details &&
+                <div className="mb-3">
+                    <p> <b> About's the book : </b>{book?.details}</p>
+                </div>
+            }
 
             <div className="mb-3">
                 <p> <b> No of page : </b>{book?.page}</p>
             </div>
 
             <div className="mb-3">
-                <p> <b>Price : </b>{book?.price}</p>
+                <p> <b>Price : </b>{book?.price} <b>৳</b></p>
+            </div>
+
+            <div className=" text-center">
+                <button className=" btn btn-secondary" >
+                    <Link to={`/updateBook/${book?.id}`} className=" text-decoration-none fw-bold text-white">Go to Update</Link>
+                </button>
             </div>
         </div>
     );

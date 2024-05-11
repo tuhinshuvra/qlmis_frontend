@@ -59,7 +59,13 @@ const AllBooks = () => {
 
     return (
         <div className=" container  my-2">
-            <h2>All Books </h2>
+            <div className=" d-flex justify-content-between my-3">
+                <h1>All Books </h1>
+                <button className="btn">
+                    <Link className=" text-decoration-none text-white fw-bolder btn btn-secondary" to="/entryNewBook">Add New Book</Link>
+                </button>
+            </div>
+
             {allBook.length > 0 ?
                 <>
                     <table className="table table-striped table-hover table-secondary">

@@ -57,7 +57,12 @@ const AllAuthor = () => {
 
     return (
         <div className="container my-2">
-            <h2>All Author </h2>
+            <div className=" d-flex justify-content-between my-3">
+                <h1>All Author </h1>
+                <button className="btn">
+                    <Link className=" text-decoration-none text-white fw-bolder btn btn-secondary" to="/entryNewAuthor">Add New Author</Link>
+                </button>
+            </div>
             {allAuthors.length > 0 ?
                 <>
                     <table className="table table-striped table-hover table-secondary">

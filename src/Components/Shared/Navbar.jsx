@@ -18,7 +18,7 @@ const Navbar = () => {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/allBooks">All Books</Link></li>
-                                <li><Link className="dropdown-item" to="/entryNewBook">New Book Entry</Link></li>
+                                <li><Link className="dropdown-item" to="/entryNewBook">Add Book</Link></li>
                             </ul>
                         </li>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/allAuthors">All Authors</Link></li>
-                                <li><Link className="dropdown-item" to="/entryNewAuthor">New Author Entry</Link></li>
+                                <li><Link className="dropdown-item" to="/entryNewAuthor">Add Author</Link></li>
                             </ul>
                         </li>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
                             </Link>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/allPublishers">All Publications</Link></li>
-                                <li><Link className="dropdown-item" to="/entryNewPublisher">New Publication Entry</Link></li>
+                                <li><Link className="dropdown-item" to="/entryNewPublisher">Add Publication</Link></li>
                             </ul>
                         </li>
 
