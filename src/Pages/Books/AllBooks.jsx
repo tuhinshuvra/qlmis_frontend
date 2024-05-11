@@ -24,25 +24,30 @@ const AllBooks = () => {
     }, []);
 
     const handleDelete = (id) => {
-        console.log("Deleting book with ID:", id);
+        // console.log("Deleting book with ID:", id);
         // setLoading(true);
-        fetch(`http://localhost:5000/books/${id}`, {
-            method: "DELETE"
-        })
-            .then(response => {
-                if (response.ok) {
-                    setAllBook(allBook.filter(book => book.id !== id));
-                    console.log("Book deleted successfully");
-                    toast.success("The Book Deleted Successfully!")
-                } else {
-                    console.error("Failed to delete book");
-                }
-                setLoading(false);
+        const isConfirmed = window.confirm("Are you sure you want to delete  the book?")
+        if (isConfirmed) {
+            fetch(`http://localhost:5000/books/${id}`, {
+                method: "DELETE"
             })
-            .catch(error => {
-                console.error("Error deleting book:", error);
-                setLoading(false);
-            });
+                .then(response => {
+                    if (response.ok) {
+                        setAllBook(allBook.filter(book => book.id !== id));
+                        console.log("Book deleted successfully");
+                        toast.success("The Book Deleted Successfully!")
+                    } else {
+                        console.error("Failed to delete book");
+                    }
+                    setLoading(false);
+                })
+                .catch(error => {
+                    console.error("Error deleting book:", error);
+                    setLoading(false);
+                });
+        }
+
+
     };
 
 

@@ -19,7 +19,6 @@ const Navbar = () => {
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to="/allBooks">All Books</Link></li>
                                 <li><Link className="dropdown-item" to="/entryNewBook">New Book Entry</Link></li>
-                                <li><Link className="dropdown-item" to="/updateBook">Update Book</Link></li>
                             </ul>
                         </li>
 
@@ -28,9 +27,8 @@ const Navbar = () => {
                                 Author
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/allBooks">All Books</Link></li>
-                                <li><Link className="dropdown-item" to="/entryNewBook">New Book Entry</Link></li>
-                                <li><Link className="dropdown-item" to="/editBook">Edit Book</Link></li>
+                                <li><Link className="dropdown-item" to="/allAuthors">All Authors</Link></li>
+                                <li><Link className="dropdown-item" to="/entryNewAuthor">New Author Entry</Link></li>
                             </ul>
                         </li>
 
@@ -39,9 +37,8 @@ const Navbar = () => {
                                 Publication
                             </Link>
                             <ul className="dropdown-menu">
-                                <li><Link className="dropdown-item" to="/allBooks">All Books</Link></li>
-                                <li><Link className="dropdown-item" to="/entryNewBook">New Book Entry</Link></li>
-                                <li><Link className="dropdown-item" to="/editBook">Edit Book</Link></li>
+                                <li><Link className="dropdown-item" to="/allBooks">All Publications</Link></li>
+                                <li><Link className="dropdown-item" to="/entryNewBook">New Publication Entry</Link></li>
                             </ul>
                         </li>
 

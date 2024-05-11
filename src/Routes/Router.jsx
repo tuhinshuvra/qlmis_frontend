@@ -7,6 +7,10 @@ import EntryNewBook from "../Pages/Books/EntryNewBook";
 import UpdateBook from "../Pages/Books/UpdateBook";
 import AboutUs from "../Pages/AboutUs";
 import BookDetails from "../Pages/Books/BookDetails";
+import AllAuthor from "../Pages/Authors/AllAuthor";
+import EntryNewAuthor from "../Pages/Authors/EntryNewAuthor";
+import UpdateAuthor from "../Pages/Authors/UpdateAuthor";
+import AuthorDetails from "../Pages/Authors/AuthorDetails";
 
 const Router = createBrowserRouter([
     {
@@ -33,6 +37,27 @@ const Router = createBrowserRouter([
                 path: "/book/:id",
                 element: <BookDetails />
             },
+
+
+            {
+                path: "/allAuthors",
+                element: <AllAuthor></AllAuthor>
+            },
+            {
+                path: "/entryNewAuthor",
+                element: <EntryNewAuthor></EntryNewAuthor>
+            },
+            {
+                path: "/updateAuthor/:id",
+                element: <UpdateAuthor></UpdateAuthor>
+            },
+            {
+                path: "/author/:id",
+                element: <AuthorDetails></AuthorDetails>
+            },
+
+
+
             {
                 path: "/aboutUs",
                 element: <AboutUs></AboutUs>
