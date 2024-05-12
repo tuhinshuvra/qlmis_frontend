@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "../../Loader/Loader";
+import useTitle from "../../hooks/useTitle";
 
 const Home = () => {
     const [allBook, setAllBook] = useState([]);
     const [loading, setLoading] = useState(false);
+    useTitle("Home");
 
     useEffect(() => {
         // setLoading(true);
